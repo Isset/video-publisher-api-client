@@ -5,12 +5,15 @@ This is the API client for http://my.videopublisher.io/ API. Use this to simplif
 Example
 =======
 
-The API requires an consumer and private key which can be requested at info@my.videopublisher.io.
+The API requires a consumer and private key which can be requested at info@my.videopublisher.io.
 
 ```php
 <?php
 
 include '../src/IssetBV/VideoPublisherClient/Autoloader.php';
+
+use VideoPublisher\VideoPublisherClient;
+use VideoPublisher\Authentication\KeyPairAuthentication;
 
 //Create an authentication, only consumer/private keypair authentication is supported at this time
 $authentication = new KeyPairAuthentication('your_consumer_key', 'your_private_key');

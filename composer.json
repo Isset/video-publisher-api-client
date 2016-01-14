@@ -1,0 +1,21 @@
+{
+    "name": "issetbv/video-publisher-api-client",
+    "type": "library",
+    "description": "VideoPublisher API client for PHP",
+    "homepage": "www.isset.nl",
+    "authors": [
+    {
+        "name": "Bart Malestein",
+        "email": "bart@isset.nl",
+        "role": "Developer"
+    }
+    ],
+    "require": {
+         "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "VideoPublisher": "src"
+        }
+    }
+}

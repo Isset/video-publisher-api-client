@@ -87,7 +87,7 @@ class VideoPublisherClient
      * Returns a stream, based on Uuid. Contains basic information and playout url / video player
      *
      * @param string $uuid
-     * @return ConnectionInterface
+     * @return Stream
      * @throws StreamNotFoundException
      */
     public function getStream($uuid)

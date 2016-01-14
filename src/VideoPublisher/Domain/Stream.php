@@ -52,4 +52,52 @@ class Stream
         $this->viewable = $data['viewable'];
         $this->view = new StreamView($data['view']);
     }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUuid()
+    {
+        return $this->uuid;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function isEnabled()
+    {
+        return $this->enabled;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function isViewable()
+    {
+        return $this->viewable;
+    }
+
+    /**
+     * @return StreamView
+     */
+    public function getView()
+    {
+        return $this->view;
+    }
 }

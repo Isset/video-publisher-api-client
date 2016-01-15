@@ -1,3 +1,8 @@
+[![Author](http://img.shields.io/badge/author-issetbv-orange.svg?style=flat-square)](https://isset.nl)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Packagist Version](https://img.shields.io/packagist/v/issetbv/video-publisher-api-client.svg?style=flat-square)](https://packagist.org/packages/issetbv/video-publisher-api-client)
+[![Total Downloads](https://img.shields.io/packagist/dt/issetbv/video-publisher-api-client.svg?style=flat-square)](https://packagist.org/packages/issetbv/video-publisher-api-client)
+
 DESCRIPTION
 ===========
 This is the API client for http://my.videopublisher.io/ API. Use this to simplify the use of the API in PHP.

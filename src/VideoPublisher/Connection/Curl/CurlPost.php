@@ -30,7 +30,7 @@ class CurlPost implements ConnectionInterface
      * @param int $curlOptConnectionTimeOut
      * @param int $curlOptTimeOut
      */
-    function __construct($curlOptConnectionTimeOut = 2, $curlOptTimeOut = 8)
+    public function __construct($curlOptConnectionTimeOut = 2, $curlOptTimeOut = 8)
     {
         $this->curlOptConnectionTimeOut = $curlOptConnectionTimeOut;
         $this->curlOptTimeOut = $curlOptTimeOut;

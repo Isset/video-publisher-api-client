@@ -13,18 +13,18 @@ class ResponseException extends Exception
 {
 
     /**
-     * @var string
+     * @var ResponseInterface
      */
     protected $response;
 
     /**
      * ResponseException constructor.
-     * @param string $response
+     * @param ResponseInterface $response
      * @param null $message
      * @param null $code
      * @param null $previous
      */
-    public function __construct($response, $message = null, $code = null, $previous = null)
+    public function __construct(ResponseInterface $response, $message = null, $code = null, $previous = null)
     {
         $this->response = $response;
         parent::__construct($message, $code, $previous);

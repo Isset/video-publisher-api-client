@@ -25,12 +25,12 @@ class Stream
     private $status;
 
     /**
-     * @var bool
+     * @var boolean
      */
     private $enabled;
 
     /**
-     * @var bool
+     * @var boolean
      */
     private $viewable;
 
@@ -48,8 +48,8 @@ class Stream
         $this->name = $data['streamName'];
         $this->uuid = $data['uuid'];
         $this->status = $data['status'];
-        $this->enabled = $data['enabled'];
-        $this->viewable = $data['viewable'];
+        $this->enabled = (boolean)$data['enabled'];
+        $this->viewable = (boolean)$data['viewable'];
         $this->view = new StreamView($data['view']);
     }
 

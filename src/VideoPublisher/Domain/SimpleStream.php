@@ -38,7 +38,7 @@ class SimpleStream
         $this->name = $data['streamName'];
         $this->uuid = $data['uuid'];
         $this->status = $data['status'];
-        $this->enabled = $data['enabled'];
+        $this->enabled = (boolean)$data['enabled'];
     }
 
     /**

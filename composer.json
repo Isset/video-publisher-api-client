@@ -3,6 +3,7 @@
     "type": "library",
     "description": "VideoPublisher API client for PHP",
     "homepage": "http://www.isset.nl",
+    "license": "MIT",
     "authors": [
     {
         "name": "Bart Malestein",

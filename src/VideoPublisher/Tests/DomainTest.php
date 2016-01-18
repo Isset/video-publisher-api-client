@@ -13,6 +13,9 @@ include_once 'src/VideoPublisher/AutoLoader.php';
 class DomainTest extends \PHPUnit_Framework_TestCase
 {
 
+    /**
+     * Test SimpleStream object
+     */
     public function testSimpleStreamObject()
     {
         $simpleStream = new SimpleStream([
@@ -26,6 +29,9 @@ class DomainTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('test', $simpleStream->getName());
     }
 
+    /**
+     * Test Stream object
+     */
     public function testStreamObject()
     {
         $stream = new Stream([

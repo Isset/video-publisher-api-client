@@ -29,6 +29,7 @@ class ConnectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * List stream with exception test
      * @expectedException \VideoPublisher\Exception\BadResponseException
      */
     public function testListStreamsException()
@@ -53,6 +54,7 @@ class ConnectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Get stream with exception test
      * @expectedException \VideoPublisher\Exception\StreamNotFoundException
      */
     public function testGetStreamException()

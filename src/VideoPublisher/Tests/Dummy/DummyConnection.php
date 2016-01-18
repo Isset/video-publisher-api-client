@@ -7,6 +7,11 @@ use VideoPublisher\Connection\Curl\CurlResponse;
 use VideoPublisher\Connection\ResponseInterface;
 use VideoPublisher\Payload\Payload;
 
+/**
+ * Class DummyConnection.
+ *
+ * @author Bart Malestein <bart@isset.nl>
+ */
 class DummyConnection implements ConnectionInterface
 {
 

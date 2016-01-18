@@ -46,7 +46,7 @@ class VideoPublisherClient
      * @param Authentication $authentication - Your preferred authentication, default KeyPairAuthentication
      * @param string $tokenCacheLocation - Your preferred token location on disk. This can be any folder, but make sure the application has sufficient rights.
      * @param string $baseUrl - http://my.videopublisher.io/
-     * @param ConnectionInterface $connection
+     * @param ConnectionInterface $connection - Your preferred connection handler, defaults to CurlPost
      *
      * @throws TokenCacheNotWritableException
      */

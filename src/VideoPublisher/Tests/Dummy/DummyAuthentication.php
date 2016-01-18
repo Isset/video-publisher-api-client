@@ -8,6 +8,11 @@ use VideoPublisher\Payload\PayloadFactory;
 use VideoPublisher\Security\Token;
 use VideoPublisher\Security\TokenVault;
 
+/**
+ * Class DummyAuthentication.
+ *
+ * @author Bart Malestein <bart@isset.nl>
+ */
 class DummyAuthentication implements Authentication
 {
 

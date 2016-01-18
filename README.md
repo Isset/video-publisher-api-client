@@ -1,5 +1,5 @@
 [![Author](http://img.shields.io/badge/author-issetbv-orange.svg?style=flat-square)](https://isset.nl)
-[![Build Status](https://img.shields.io/travis/isset/video-publisher-api-client/master.svg?style=flat-square)](https://travis-ci.org/isset/video-publisher-api-client)
+[![Build Status](https://scrutinizer-ci.com/g/Isset/video-publisher-api-client/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Isset/video-publisher-api-client/build-status/master)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/isset/video-publisher-api-client.svg?style=flat-square)](https://scrutinizer-ci.com/g/isset/video-publisher-api-client/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/isset/video-publisher-api-client.svg?style=flat-square)](https://scrutinizer-ci.com/g/isset/video-publisher-api-client)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
@@ -18,7 +18,7 @@ The API requires a consumer and private key which can be requested at info@my.vi
 ```php
 <?php
 
-include '../src/IssetBV/VideoPublisherClient/Autoloader.php';
+include 'src/VideoPublisher/AutoLoader.php';
 
 use VideoPublisher\VideoPublisherClient;
 use VideoPublisher\Authentication\KeyPairAuthentication;

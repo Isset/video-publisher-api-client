@@ -46,15 +46,21 @@ class VideoPublisherClient
      * @param Authentication $authentication - Your preferred authentication, default KeyPairAuthentication
      * @param string $tokenCacheLocation - Your preferred token location on disk. This can be any folder, but make sure the application has sufficient rights.
      * @param string $baseUrl - http://my.videopublisher.io/
+     * @param ConnectionInterface $connection
      *
      * @throws TokenCacheNotWritableException
      */
-    public function __construct(Authentication $authentication, $tokenCacheLocation, $baseUrl = 'http://my.videopublisher.io/')
+    public function __construct(Authentication $authentication, $tokenCacheLocation, $baseUrl = 'http://my.videopublisher.io/', ConnectionInterface $connection = null)
     {
         $this->baseUrl = $baseUrl;
         $this->authentication = $authentication;
-        $this->connection = new CurlPost();
         $this->payloadFactory = new PayloadFactory(rtrim($this->baseUrl, '/'));
+
+        if ($connection === null) {
+            $this->connection = new CurlPost();
+        } else {
+            $this->connection = $connection;
+        }
 
         $authentication->injectServices($this->connection, new TokenVault($tokenCacheLocation), $this->payloadFactory);
     }
